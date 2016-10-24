@@ -1,0 +1,107 @@
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+::-webkit-input-placeholder {color:#c2c2c2;}
+::-moz-placeholder          {color:#c2c2c2;}/* Firefox 19+ */
+:-moz-placeholder           {color:#c2c2c2;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#c2c2c2;}
+body {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.3;
+	background-color: #F1F1F1;
+	color: #c2c2c2;
+}
+.wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	padding-top: 40px;
+}
+/* style for main */
+.pl_search [type=search] {
+	display: inline-block;
+	border: none;
+	background: none;
+	font-size: 7em;
+	outline: thin;
+	font-weight: 700;
+	width: calc(100% - 84px);
+	vertical-align: middle;
+	color: #ec5a62;
+	line-height: normal;
+}
+.pl_search [type=submit] {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	background: 50%;
+	background-image: url(../img/magnifier.svg);
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	vertical-align: middle;
+}
+input[type="search"]::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+	}
+.pl_search [type=submit]:hover {
+	transform: scale(1.2);
+}
+/* end style for main */
+/* style for sidebar */
+.sidebar {
+	margin: 0 -25px;
+	margin-top: 40px;
+}
+.sidebar .column {
+	display: inline-block;
+	width: 33%;
+	padding: 0 25px;
+}
+.sidebar_list {
+	list-style: none;
+}
+.sidebar_list a {
+	display: block;
+	background-color: rgba(118,117,128,0.05);
+	border-radius: 6px;
+	margin-bottom: 4px;
+	padding: .85em;
+	text-decoration: none;
+}
+.sidebar_list a:hover {
+	background-color: #E4E4E6;
+}
+.sidebar_list a:hover .sidebar_list_title {
+	color: #EC5A62;
+}
+.sidebar_list img, .sidebar_list_title {
+	display: inline-block;
+	vertical-align: middle;
+}
+.sidebar_list_title {
+	font-size: .98em;
+	margin: 0;
+	color: #c2c2c2;
+	width: calc(100% - 60px);
+	padding-left: 10px;
+}
+h2.sidebar_title {
+	font-size: 1.2em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: 800;
+	margin: 15px 0;
+}
+.circle_icon {
+	border-radius: 50%;
+}
+/*end style for sidebar */
